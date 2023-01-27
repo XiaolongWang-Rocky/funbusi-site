@@ -196,7 +196,6 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .banner-text-info {
   margin: 15vh 0 0 8vw;
-  width: 70%;
 }
 
 .banner-text-info h1 {
@@ -205,6 +204,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   line-height: 1.4em;
   color: #fcab2f;
+  width: 70%;
 }
 
 #funbusi_slider {
@@ -485,8 +485,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
   }
 
   .banner-text-info {
-    margin: 25vh 0 0 18vw;
-    width: 45%;
+    margin: 25vh 0 0 18vw; 
   }
 
   .banner-text-info h1 {
@@ -494,6 +493,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     word-spacing: 0.3em;
     text-align: left;
     line-height: 1.4em;
+    width: 45%;
   }
 
   .funbusi_cards_row {
