@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import { useEffect } from 'react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import WOW from 'wowjs';
 import { Provider } from 'react-redux';
 import { store } from './store';
@@ -19,9 +19,9 @@ function App() {
   return (
     <Provider store={store}>
       <Header />
-      <HashRouter>
+      <BrowserRouter>
         <AppRouter></AppRouter>
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
 }
