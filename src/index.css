@@ -244,7 +244,17 @@ p, a, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.funbusi_card_container svg {
+/* .funbusi_card_container svg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 125px);
+  z-index: 900;
+  pointer-events: none;
+} */
+
+.funbusi_circle_svg {
   width: 250px;
   height: 250px;
   position: absolute;
@@ -254,23 +264,83 @@ p, a, h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-.funbusi_card_container svg circle {
+/* .funbusi_card_container svg circle { */
+.funbusi_circle {
   cx: 125px;
   cy: 125px;
   r: 121px;
   stroke: orange;
   stroke-width: 4px;
   fill: none;
-  -webkit-animation-name: draw-circle;
-  -webkit-animation-duration: 2s;
+  animation-name: drawCircle;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  -webkit-animation-name: drawCircle;
+  -webkit-animation-duration: 2.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-transform-origin: center;
   -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin: center;
+  -o-animation-name: drawCircle;
+  -o-animation-duration: 2.5s;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: ease-in-out;
+  -o-transform-origin: center;
+  -o-transform: rotate(-90deg);
+  -moz-animation-name: drawCircle;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-transform-origin: center;
+  -moz-transform: rotate(-90deg);
+  -ms-animation-name: drawCircle;
+  -ms-animation-duration: 2.5s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-in-out;
+  -ms-transform-origin: center;
+  -ms-transform: rotate(-90deg);
 }
 
-@-webkit-keyframes draw-circle{
+@keyframes drawCircle{
+  0% {
+      stroke-dasharray: 0, 10000;
+  }
+  100% {
+      stroke-dasharray: 786, 10000;
+  }
+}
+
+@-webkit-keyframes drawCircle{
+  0% {
+      stroke-dasharray: 0, 10000;
+  }
+  100% {
+      stroke-dasharray: 786, 10000;
+  }
+}
+
+@-o-keyframes drawCircle{
+  0% {
+      stroke-dasharray: 0, 10000;
+  }
+  100% {
+      stroke-dasharray: 786, 10000;
+  }
+}
+
+@-ms-keyframes drawCircle{
+  0% {
+      stroke-dasharray: 0, 10000;
+  }
+  100% {
+      stroke-dasharray: 786, 10000;
+  }
+}
+
+@-moz-keyframes drawCircle{
   0% {
       stroke-dasharray: 0, 10000;
   }
