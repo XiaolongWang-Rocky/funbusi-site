@@ -7,7 +7,7 @@ function ContactUs() {
 			</h1>
 			<div className="row">
 				<div className="col-md-12">
-					<form className="funbusi_contact" action="https://formsubmit.co/60cb4eac66d0c985c3d9544ab92b9672" method="POST">
+					<form className="funbusi_contact" action="https://formsubmit.co/info@funbusi.com.au" method="POST">
 						<input type="hidden" name="_next" value="https://www.funbusi.com.au/thanks" />
 						<input type="hidden" name="_subject" value="New customer query" />
 						<div className="mb-3 wow flipInX animated" data-wow-delay="0.3s">
