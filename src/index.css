@@ -25,16 +25,14 @@ p, a, h1, h2, h3, h4, h5, h6 {
   color: #595757;
 }
 
-.dropdown-toggle::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0em;
-  vertical-align: middle;
-  content: "";
-  border-top: 0em solid;
-  border-right: 0em solid transparent;
-  border-left: 0.3em solid transparent;
+.funbusi_subtitle {
+  line-height: 2.5em;
+  width: 80%;
+  margin: 10vh auto 5%;
+  border-bottom-width: 4px;
+  border-bottom-color: rgb(177, 175, 175);
+  border-bottom-style: double;
+  position: relative;
 }
 
 .funbusi_header {
@@ -158,10 +156,19 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 .funbusi_menu_drop {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   display: block;
-  margin-top: 0.6em;
+  margin-top: 1.3vh;
+  margin-right: 1vw;
 }
+
+.funbusi_dropdown_menu_item {
+  text-decoration: none;
+}
+
+/* .funbusi_menu_drop a {
+  display: block;
+  padding-right: ;
+} */
 
 .funbusi_para {
   text-align: justify;
@@ -215,16 +222,6 @@ p, a, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.funbusi_subtitle {
-  line-height: 2.5em;
-  width: 80%;
-  margin: 2.7% auto 5%;
-  border-bottom-width: 4px;
-  border-bottom-color: rgb(177, 175, 175);
-  border-bottom-style: double;
-  position: relative;
-}
-
 .about_us_image {
   width: 100%;
   margin: 10px auto 0;
@@ -244,16 +241,6 @@ p, a, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* .funbusi_card_container svg {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 0;
-  left: calc(50% - 125px);
-  z-index: 900;
-  pointer-events: none;
-} */
-
 .funbusi_circle_svg {
   width: 250px;
   height: 250px;
@@ -264,12 +251,11 @@ p, a, h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* .funbusi_card_container svg circle { */
 .funbusi_circle {
   cx: 125px;
   cy: 125px;
   r: 121px;
-  stroke: orange;
+  stroke: #fcab2f;
   stroke-width: 4px;
   fill: none;
   animation-name: drawCircle;
@@ -408,10 +394,18 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .submit_btn {
   margin: 0 auto;
-  background-color: #fcab2f;
-  color: white;
+  border: 1px #fcab2f solid;
+  color: #fcab2f;
   display: block;
   position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  width: 185px;
+}
+
+.submit_btn:hover {
+  background-color: #fcab2f;
+  color: white;
 }
 
 .funbusi_linkbar {
@@ -477,7 +471,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
   .funbusi_subtitle {
     line-height: 2.5em;
     width: 36%;
-    margin: 2.7% auto 5%;
+    margin: 10vh auto 5%;
     border-bottom-width: 4px;
     border-bottom-color: rgb(177, 175, 175);
     border-bottom-style: double;
@@ -511,6 +505,22 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
   .funbusi_card:hover+p {
     opacity: 1;
+  }
+
+  .submit_btn {
+    margin: 0 auto;
+    border: 1px #fcab2f solid;
+    color: #fcab2f;
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    width: 185px;
+  }
+  
+  .submit_btn:hover {
+    background-color: #fcab2f;
+    color: white;
   }
 
   .funbusi_linkbar p {
