@@ -8,7 +8,7 @@ function ContactUs() {
 			<div className="row">
 				<div className="col-md-12">
 					<form className="funbusi_contact" action="https://formsubmit.co/60cb4eac66d0c985c3d9544ab92b9672" method="POST">
-						<input type="hidden" name="_next" value="https://www.funbusi.com.au/thanks.html" />
+						<input type="hidden" name="_next" value="https://www.funbusi.com.au/thanks" />
 						<input type="hidden" name="_subject" value="New customer query" />
 						<div className="mb-3 wow flipInX animated" data-wow-delay="0.3s">
 							<label htmlFor="fullName" className="form-label">Full Name<span style={{color: "red"}}>*</span></label>
@@ -24,8 +24,7 @@ function ContactUs() {
 						</div>
 						<div className="mb-3 wow flipInX animated" data-wow-delay="1.2s">
 							<label htmlFor="messages" className="form-label">Messages<span style={{color: "red"}}>*</span></label>
-							<textarea className="form-control" name="message" rows="5" placeholder="Tell us how can we help?"
-								required></textarea>
+							<textarea className="form-control" name="message" rows="5" placeholder="Tell us how can we help?" required></textarea>
 						</div>
 						<button type="submit" className="btn submit_btn wow fadeIn animated" data-wow-delay="1.5s">Send</button>
 					</form>

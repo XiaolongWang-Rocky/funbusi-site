@@ -14,6 +14,7 @@ function AppRouter(props) {
         <Routes>
             <Route path='/' exact element={<Home />}/>
             <Route path='/products/pos' element={LazyLoad('pages/products/PosProducts')}/>
+            <Route path='/thanks' element={LazyLoad('pages/Thanks')}/>
             <Route path='*' element={<Navigate to='/'/>}/>
         </Routes>
     );
