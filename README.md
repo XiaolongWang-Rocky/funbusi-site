@@ -1,3 +1,9 @@
+# FUNBUSI official website
+
+Built with React, react-router, Redux, Ant Design, Bootstrap and so on.
+
+Use formsubmit platform to send contact email
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
