@@ -3,8 +3,8 @@ import {Carousel} from 'antd';
 function Banner() {
     return (
         <div>
-            <div className="container-fluid">
-            </div>
+            {/* <div className="container-fluid">
+            </div> */}
             <div className="row funbusi_section" id="banner">
                 <div className="col-md-12 funbusi_banner wow fadeIn animated" data-wow-duration="2s">
                     <Carousel effect='fade' autoplay dots={false}>
