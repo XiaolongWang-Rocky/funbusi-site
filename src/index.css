@@ -411,11 +411,11 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .funbusi_linkbar {
   background-color: #fcab2f;
+  text-align: center;
 }
 
 .funbusi_linkbar p {
   padding: 1em 0 1em 2em;
-  display: inline-block;
   line-height: 1.5em;
   font-size: 1em;
 }
